@@ -1,0 +1,12 @@
+appConfig:
+  app:
+    name: just-meal
+    port: 8080
+  owner: justsquad
+dbConfig:
+  type: postgres
+  postgres:
+    url: httdt
+  mongo:
+    uri: asfasdf
+    database: dishes
