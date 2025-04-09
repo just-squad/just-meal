@@ -11,7 +11,7 @@
       "mode": "debug",
       "console": "integratedTerminal",
       "cwd": "${workspaceFolder}",
-      "program": "${workspaceFolder}/cmd/just-meal",
+      "program": "${workspaceFolder}/server/cmd/just-meal",
       "args": [
       ],
       "env": {  }

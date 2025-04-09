@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"just-meal/internal/models"
+	"just-meal-api/internal/models"
 	"time"
 
 	"github.com/google/uuid"
@@ -24,7 +24,7 @@ type dishPostgresRepository struct {
 }
 
 func newDishPostgresRepository(ctx context.Context, cfg PgConfig) (*dishPostgresRepository, error) {
-	config, err := pgxpool.ParseConfig(cfg.URL)
+	config, err := pgxpool.ParseConfig(cfg.GetConnectionString())
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse postgres connection config: %w", err)
 	}

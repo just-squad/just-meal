@@ -6,7 +6,11 @@ appConfig:
 dbConfig:
   type: postgres
   postgres:
-    url: httdt
+    host: localhost
+    port: 5432
+    user: user
+    password: password
+    dbname: dishes
   mongo:
-    uri: asfasdf
+    uri: mongodb://host1:27017
     database: dishes

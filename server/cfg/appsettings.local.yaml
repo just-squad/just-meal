@@ -1,0 +1,11 @@
+dbConfig:
+  type: postgres
+  postgres:
+    host: localhost
+    port: 5432
+    user: just-meal-user
+    password: "67921b7b-c8f1-4a6a-958f-e923488a28f8"
+    dbname: dishes
+  mongo:
+    uri: mongodb://host1:27017
+    database: dishes

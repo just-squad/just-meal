@@ -2,7 +2,7 @@ package repositories
 
 import (
 	"context"
-	"just-meal/internal/models"
+	"just-meal-api/internal/models"
 
 	"github.com/google/uuid"
 )

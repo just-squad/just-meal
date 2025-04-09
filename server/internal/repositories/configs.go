@@ -1,5 +1,7 @@
 package repositories
 
+import "fmt"
+
 type DbType string
 
 const (
@@ -15,7 +17,17 @@ type DBConfig struct {
 }
 
 type PgConfig struct {
-	URL string // Строка подключения к PostgresDb
+	Host     string
+	Port     string
+	User     string
+	Password string
+	DBName   string
+}
+
+func (c *PgConfig) GetConnectionString() string {
+	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable",
+		c.Host, c.Port, c.User, c.Password, c.DBName)
+	return psqlInfo
 }
 
 type MongoConfig struct {

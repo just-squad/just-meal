@@ -1,8 +1,8 @@
 package http
 
 import (
-	"just-meal/internal/models"
-	"just-meal/internal/repositories"
+	"just-meal-api/internal/models"
+	"just-meal-api/internal/repositories"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

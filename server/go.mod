@@ -1,4 +1,4 @@
-module just-meal
+module just-meal-api
 
 go 1.23
 
